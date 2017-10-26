@@ -2,6 +2,8 @@
 
 A Solidity math library with overflow checking
 
+Version: 0.5.0
+
 example usage:
 
 ```
@@ -120,3 +122,9 @@ a <= b where sym == false
 Trinary comparitor returning int -1, 0, 1 for LT, EQ, GT
 
 `function cmpTri(uint a, uint b) internal pure returns (int8)`
+
+### to*x*
+
+Safe `uint` casting for uint lengths 8,16,32,40,48,56,64,72,80,96,128,192
+
+`function uint64(uint a) internal pure returns (uint64 b)`
